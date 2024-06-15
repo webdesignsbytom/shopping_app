@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { FiMenu } from 'react-icons/fi';
 import { FaRegUser, FaSearch } from 'react-icons/fa';
+// Images
+import LogoImage from '../../assets/images/logos/wdbt-white.svg'
 
 const NavHeader: React.FC = ({}) => {
   const history = useHistory();
@@ -27,6 +29,10 @@ const NavHeader: React.FC = ({}) => {
         {/* Menu */}
         <section className='px-4 text-white'>
           <FiMenu size={30} />
+        </section>
+        {/* Logo */}
+        <section>
+          <img src={LogoImage} alt="Logo" className='w-8 h-8' />
         </section>
         {/* User */}
         <section className='px-4 text-white'>
